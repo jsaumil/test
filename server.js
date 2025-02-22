@@ -5,7 +5,8 @@ const express = require('express');
 
 const app = express();
 
-const DB = process.env.DATABASE
+const mongoURI = "mongodb://admin:your-secure-password@your-ec2-ip:34.239.123.93 /admin"; // Replace with your details
+
 
 mongoose.connect(DB,{
     // useUnifiedTopology: true,
